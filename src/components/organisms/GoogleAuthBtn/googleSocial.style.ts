@@ -16,6 +16,9 @@ const styleOptions = StyleSheet.create({
     borderRadius: moderateScale(8),
     position: 'relative',
     overflow: 'hidden',
+    borderWidth: moderateScale(1),
+    borderColor: colors.primary600,
+    borderStyle: 'solid',
   },
   OptionGoogle: {
     backgroundColor: '#ffffff',

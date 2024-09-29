@@ -105,7 +105,7 @@ const BottomTabsBar: React.FC<BottomTabBarProps> = ({
                       </View>
                     </View>
                   );
-                } else if (label === 'Templates') {
+                } else if (label === 'Odyssey') {
                   icon = (
                     <View style={tabStyle.NavTabButton}>
                       {isFocused ? (
@@ -129,7 +129,7 @@ const BottomTabsBar: React.FC<BottomTabBarProps> = ({
                               color: isFocused ? colors.white : colors.gray,
                             },
                           ]}>
-                          {t('Templates')}
+                          {t('Odyssey')}
                         </Text>
                       </View>
                     </View>

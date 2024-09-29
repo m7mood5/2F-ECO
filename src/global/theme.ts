@@ -23,9 +23,11 @@ export const moderateVerticalScale = (size: number, factor = 0.5) => {
 };
 
 export const colors = {
-  primary: '#3B3A36',
+  primary: '#000000',
   primaryDark: '#1F1E1B', // Deep Charcoal
-  primaryLight: '#E0E0E0', // Pale Gray
+  primaryLight: '#f5f5f5',
+  primary100: '#dfdfdf', //
+  primary600: '#8a8a8a', //
   secondaryLight: '#F5D78D', // Pale Gold
   secondary: '#DAA520',
   dark: '#051012',

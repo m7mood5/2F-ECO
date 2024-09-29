@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "637557146186",
+    "project_id": "fastfit-29497",
+    "storage_bucket": "fastfit-29497.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637557146186:android:3ac320da541d006da3dcb3",
+        "android_client_info": {
+          "package_name": "com.towf"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu0J6p-qH81sDt21opg-C9Iu6pBw9-l4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,12 +3,17 @@ import {
   colors,
   fonts,
   moderateScale,
+  scale,
   verticalScale,
 } from '../../../global/theme';
 
 const authStyle = StyleSheet.create({
   Container: {
-    paddingVertical: verticalScale(30),
+    flex: 1,
+    paddingHorizontal: scale(20),
+    paddingVertical: verticalScale(10),
+    paddingTop: verticalScale(30),
+    paddingBottom: verticalScale(30),
   },
   FormInput: {
     position: 'relative',
@@ -35,6 +40,9 @@ const authStyle = StyleSheet.create({
   },
   FormBtn: {
     marginTop: verticalScale(40),
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

@@ -1,4 +1,4 @@
-import {Svg, Path, Circle} from 'react-native-svg';
+import {Svg, Path, Circle, Polygon} from 'react-native-svg';
 import React from 'react';
 import {iconPropsType} from './generalTypes';
 import {colors} from './theme';
@@ -169,6 +169,37 @@ export const EmailIcon = (props: iconPropsType) => {
       <Path
         d="M17 3.5H7C4 3.5 2 5 2 8.5V15.5C2 19 4 20.5 7 20.5H17C20 20.5 22 19 22 15.5V8.5C22 5 20 3.5 17 3.5ZM17.47 9.59L14.34 12.09C13.68 12.62 12.84 12.88 12 12.88C11.16 12.88 10.31 12.62 9.66 12.09L6.53 9.59C6.21 9.33 6.16 8.85 6.41 8.53C6.67 8.21 7.14 8.15 7.46 8.41L10.59 10.91C11.35 11.52 12.64 11.52 13.4 10.91L16.53 8.41C16.85 8.15 17.33 8.2 17.58 8.53C17.84 8.85 17.79 9.33 17.47 9.59Z"
         fill={props?.color ? props?.color : colors.primaryDark}
+      />
+    </Svg>
+  );
+};
+export const MenuIcon = (props: iconPropsType) => {
+  return (
+    <Svg
+      viewBox="0 0 24 24"
+      width={props.width}
+      height={props.height}
+      fill="none">
+      <Path
+        d="M4 6H20C20.55 6 21 6.45 21 7C21 7.55 20.55 8 20 8H4C3.45 8 3 7.55 3 7C3 6.45 3.45 6 4 6ZM4 11H20C20.55 11 21 11.45 21 12C21 12.55 20.55 13 20 13H4C3.45 13 3 12.55 3 12C3 11.45 3.45 11 4 11ZM4 16H20C20.55 16 21 16.45 21 17C21 17.55 20.55 18 20 18H4C3.45 18 3 17.55 3 17C3 16.45 3.45 16 4 16Z"
+        fill={props?.color ? props?.color : colors.primaryDark}
+      />
+    </Svg>
+  );
+};
+export const OutlineMenuIcon = (props: iconPropsType) => {
+  return (
+    <Svg
+      viewBox="0 0 24 24"
+      width={props.width}
+      height={props.height}
+      fill="none">
+      <Path
+        d="M4 6.5H20C20.28 6.5 20.5 6.72 20.5 7C20.5 7.28 20.28 7.5 20 7.5H4C3.72 7.5 3.5 7.28 3.5 7C3.5 6.72 3.72 6.5 4 6.5ZM4 11.5H20C20.28 11.5 20.5 11.72 20.5 12C20.5 12.28 20.28 12.5 20 12.5H4C3.72 12.5 3.5 12.28 3.5 12C3.5 11.72 3.72 11.5 4 11.5ZM4 16.5H20C20.28 16.5 20.5 16.72 20.5 17C20.5 17.28 20.28 17.5 20 17.5H4C3.72 17.5 3.5 17.28 3.5 17C3.5 16.72 3.72 16.5 4 16.5Z"
+        stroke={props?.color ? props?.color : colors.primaryDark}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </Svg>
   );
@@ -586,15 +617,15 @@ export const WifiIcon = (props: iconPropsType) => {
 export const HomeIcon = (props: iconPropsType) => {
   return (
     <Svg viewBox="0 0 24 24" width={props.width} height={props.height}>
-      <Path
-        d="M17.79 22.75H6.21C3.47 22.75 1.25 20.52 1.25 17.78V10.37C1.25 9.00997 2.09 7.29997 3.17 6.45997L8.56 2.25997C10.18 0.999974 12.77 0.939974 14.45 2.11997L20.63 6.44997C21.82 7.27997 22.75 9.05997 22.75 10.51V17.79C22.75 20.52 20.53 22.75 17.79 22.75ZM9.48 3.43997L4.09 7.63997C3.38 8.19997 2.75 9.46997 2.75 10.37V17.78C2.75 19.69 4.3 21.25 6.21 21.25H17.79C19.7 21.25 21.25 19.7 21.25 17.79V10.51C21.25 9.54997 20.56 8.21997 19.77 7.67997L13.59 3.34997C12.45 2.54997 10.57 2.58997 9.48 3.43997Z"
-        fill={props?.color ? props?.color : '#292D32'}
-      />
-      <Path
-        d="M12 18.75C11.59 18.75 11.25 18.41 11.25 18V15C11.25 14.59 11.59 14.25 12 14.25C12.41 14.25 12.75 14.59 12.75 15V18C12.75 18.41 12.41 18.75 12 18.75Z"
-        fill={props?.color ? props?.color : '#292D32'}
-      />
-    </Svg>
+    <Path
+      d="M17.79 22.75H6.21C3.47 22.75 1.25 20.52 1.25 17.78V10.37C1.25 9.00997 2.09 7.29997 3.17 6.45997L8.56 2.25997C10.18 0.999974 12.77 0.939974 14.45 2.11997L20.63 6.44997C21.82 7.27997 22.75 9.05997 22.75 10.51V17.79C22.75 20.52 20.53 22.75 17.79 22.75ZM9.48 3.43997L4.09 7.63997C3.38 8.19997 2.75 9.46997 2.75 10.37V17.78C2.75 19.69 4.3 21.25 6.21 21.25H17.79C19.7 21.25 21.25 19.7 21.25 17.79V10.51C21.25 9.54997 20.56 8.21997 19.77 7.67997L13.59 3.34997C12.45 2.54997 10.57 2.58997 9.48 3.43997Z"
+      fill={props?.color ? props?.color : '#292D32'}
+    />
+    <Path
+      d="M12 18.75C11.59 18.75 11.25 18.41 11.25 18V15C11.25 14.59 11.59 14.25 12 14.25C12.41 14.25 12.75 14.59 12.75 15V18C12.75 18.41 12.41 18.75 12 18.75Z"
+      fill={props?.color ? props?.color : '#292D32'}
+    />
+  </Svg>
   );
 };
 export const HomeIconFilled = (props: iconPropsType) => {
@@ -639,38 +670,48 @@ export const ProfileIconFilled = (props: iconPropsType) => {
 
 export const TemplatesIcon = (props: iconPropsType) => {
   return (
-    <Svg viewBox="0 0 24 24" width={props.width} height={props.height}>
-      <Path
-        d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H15C20.43 1.25 22.75 3.57 22.75 9V15C22.75 20.43 20.43 22.75 15 22.75ZM9 2.75C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V9C21.25 4.39 19.61 2.75 15 2.75H9Z"
-        fill={props?.color ? props?.color : '#292D32'}
+    <Svg viewBox="0 0 90 90" width={props.width} height={props.height}>
+         {/* Hexagon with rounded corners */}
+           {/* Hexagon with rounded corners */}
+      <Path 
+        d="M 45 5 
+           Q 73 15 75 22.5 
+           L 75 67.5 
+           Q 73 75 45 85 
+           Q 17 75 15 67.5 
+           L 15 22.5 
+           Q 17 15 45 5 Z" 
+        stroke="white" 
+        strokeWidth="3" 
+        fill="none"
       />
-      <Path
-        d="M13.9501 22.7502C13.6101 22.7502 13.31 22.5202 13.22 22.1802L8.2701 2.18018C8.1701 1.78018 8.42009 1.37019 8.82009 1.27019C9.22009 1.17019 9.63006 1.41019 9.73006 1.82019L14.6801 21.8202C14.7801 22.2202 14.5301 22.6302 14.1301 22.7302C14.0701 22.7402 14.0101 22.7502 13.9501 22.7502Z"
-        fill={props?.color ? props?.color : '#292D32'}
-      />
-      <Path
-        d="M1.99985 15.7501C1.66985 15.7501 1.37988 15.5401 1.27988 15.2101C1.15988 14.8101 1.38983 14.4001 1.78983 14.2801L11.3199 11.5001C11.7199 11.3801 12.1299 11.6101 12.2499 12.0101C12.3699 12.4101 12.1398 12.8201 11.7398 12.9401L2.20987 15.7201C2.13987 15.7401 2.06985 15.7501 1.99985 15.7501Z"
-        fill={props?.color ? props?.color : '#292D32'}
-      />
+      {/* Icon Circles */}
+      <Circle cx="44.5" cy="35.5" r="8.5" transform="rotate(-180 44.5 35.5)" fill="none" stroke="#D9D9D9" strokeWidth="2" />
+      <Circle cx="44.75" cy="35.75" r="3.75" transform="rotate(-180 44.75 35.75)" fill="none" stroke="#D9D9D9" strokeWidth="2" />
+      <Circle cx="45" cy="56" r="11" transform="rotate(-180 45 56)" fill="none" stroke="#D9D9D9" strokeWidth="2" />
+      <Circle cx="45" cy="56" r="5" transform="rotate(-180 45 56)" fill="none" stroke="#D9D9D9" strokeWidth="2" />
     </Svg>
   );
 };
 export const TemplatesIconFilled = (props: iconPropsType) => {
   return (
-    <Svg viewBox="0 0 24 24" width={props.width} height={props.height}>
-      <Path
-        d="M10.51 11.22L8.31 2.39C8.26 2.16 8.05 2 7.81 2C4.6 2 2 4.6 2 7.81V13.51C2 13.85 2.33 14.1 2.66 14L10.16 11.83C10.42 11.76 10.58 11.49 10.51 11.22Z"
-        fill={props?.color ? props?.color : '#292D32'}
+    <Svg viewBox="0 0 90 90" width={props.width} height={props.height}>
+         {/* Hexagon with rounded corners */}
+         <Path 
+        d="M 45 5 
+           Q 73 15 75 22.5 
+           L 75 67.5 
+           Q 73 75 45 85 
+           Q 17 75 15 67.5 
+           L 15 22.5 
+           Q 17 15 45 5 Z" 
+        fill="white"
       />
-      <Path
-        d="M11.12 13.6789C11.05 13.3989 10.76 13.2289 10.48 13.3089L2.37 15.6689C2.15 15.7389 2 15.9389 2 16.1689V16.1889C2 19.3989 4.6 21.9989 7.81 21.9989H12.53C12.86 21.9989 13.11 21.6889 13.03 21.3589L11.12 13.6789Z"
-        fill={props?.color ? props?.color : '#292D32'}
-      />
-      <Path
-        d="M16.1908 2H10.4408C10.1108 2 9.86081 2.31 9.94081 2.64L14.6808 21.61C14.7408 21.84 14.9408 22 15.1808 22H16.1808C19.4008 22 22.0008 19.4 22.0008 16.19V7.81C22.0008 4.6 19.4008 2 16.1908 2Z"
-        fill={props?.color ? props?.color : '#292D32'}
-      />
-    </Svg>
+    <Circle cx="44.5" cy="35.5" r="8.5" transform="rotate(-180 44.5 35.5)" fill="#292D32" stroke="white" strokeWidth="2" />
+    <Circle cx="44.75" cy="35.75" r="3.75" transform="rotate(-180 44.75 35.75)" fill="#292D32" stroke="white" strokeWidth="2" />
+    <Circle cx="45" cy="56" r="11" transform="rotate(-180 45 56)" fill="#292D32" stroke="white" strokeWidth="2" />
+    <Circle cx="45" cy="56" r="5" transform="rotate(-180 45 56)" fill="#292D32" stroke="white" strokeWidth="2" />
+  </Svg>
   );
 };
 

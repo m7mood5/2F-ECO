@@ -4,7 +4,7 @@ import {colors, fonts, scale, verticalScale} from '../../../global/theme';
 
 const btnStyle = StyleSheet.create({
   btnContainer: {
-    backgroundColor: colors.primaryDark,
+    backgroundColor: colors.primary,
     paddingVertical: verticalScale(12),
     paddingHorizontal: scale(20),
     borderRadius: verticalScale(8),
@@ -15,7 +15,7 @@ const btnStyle = StyleSheet.create({
   },
   btnText: {
     color: colors.white,
-    fontFamily: fonts.InterMedium,
+    fontFamily: fonts.InterBold,
     fontWeight: '500',
     fontSize: I18nManager.isRTL ? scale(15) : scale(13),
     lineHeight: I18nManager.isRTL ? scale(15 * 1.8) : scale(13 * 1.4),

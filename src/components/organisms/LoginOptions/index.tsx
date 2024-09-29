@@ -16,7 +16,7 @@ import FacebookAuthBtn from '../FacebookAuthBtn';
 const LoginOptions: FC = () => {
   // const navigation = useAppNavigation();
   const {t} = useTranslation();
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [otherProvider, setOtherProvider] = useState<null | string>(null);
   const [otherProviderEmail, setOtherProviderEmail] = useState<null | string>(
     null,
@@ -130,7 +130,7 @@ const LoginOptions: FC = () => {
         </View>
         <View style={styleOptions.Body}>
           <View style={styleOptions.OptionList}>
-            <GoogleAuthBtn setIsLoading={setIsLoading} />
+            <GoogleAuthBtn setIsLoading={setIsLoading} otherProviderCredential={undefined} />
             <FacebookAuthBtn
               setIsLoading={setIsLoading}
               handleDiffrentProvider={handleDiffrentProvider}

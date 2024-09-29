@@ -4,9 +4,11 @@ import {
   View,
   Text,
   TouchableNativeFeedback,
+  TouchableOpacity,
   ActivityIndicator,
 } from 'react-native';
 import {colors} from '../../../global/theme';
+
 type btnProps = {
   text: string;
   onPress: () => void;
@@ -17,10 +19,11 @@ type btnProps = {
 };
 
 const CBtn = (props: btnProps) => {
+  // Use TouchableOpacity for iOS or cross-platform safety
+  const ButtonWrapper = TouchableNativeFeedback;
+
   return (
-    <TouchableNativeFeedback
-      onPress={() => props.onPress()}
-      disabled={props?.disabled}>
+    <ButtonWrapper onPress={props.onPress} disabled={props?.disabled}>
       <View
         style={[
           btnStyle.btnContainer,
@@ -39,15 +42,13 @@ const CBtn = (props: btnProps) => {
           <Text
             style={[
               btnStyle.btnText,
-              props.scndary && {
-                color: colors.primary,
-              },
+              props.scndary && {color: colors.primary},
             ]}>
             {props.text}
           </Text>
         )}
       </View>
-    </TouchableNativeFeedback>
+    </ButtonWrapper>
   );
 };
 

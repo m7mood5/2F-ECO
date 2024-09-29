@@ -1,3 +1,5 @@
+/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable react/no-unstable-nested-components */
 import {
   View,
   Text,
@@ -47,7 +49,7 @@ const Data: DataItem[] = [
   },
 ];
 
-const Slide = ({item}) => {
+const Slide = (item:any) => {
   return (
     <View style={styles.slide}>
       <Image source={item.img} style={styles.image} />
@@ -68,7 +70,7 @@ const Scrollview = () => {
               key={index}
               style={[
                 styles.indicator,
-                currentPage == index && {
+                currentPage === index && {
                   backgroundColor: colors.primaryDark,
                   width: 20,
                 },
@@ -103,7 +105,7 @@ const Scrollview = () => {
       </View>
     );
   };
-  const onScroll = e => {
+  const onScroll = (e: { nativeEvent: { contentOffset: { x: any; }; }; }) => {
     const {x} = e.nativeEvent.contentOffset;
     setCurrentPage(Math.round(x / width));
   };

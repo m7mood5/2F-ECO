@@ -9,7 +9,7 @@ import {
 
 const styleOptions = StyleSheet.create({
   Container: {
-    flex: 1,
+    // flex: 1,
     paddingHorizontal: scale(20),
     paddingVertical: verticalScale(10),
     paddingTop: verticalScale(30),

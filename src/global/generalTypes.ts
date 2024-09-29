@@ -14,6 +14,7 @@ export type MainStackParamList = {
   Welcome: undefined;
   Intro: undefined;
   Home: undefined;
+  Login: undefined;
   EmailLogin: undefined;
   ForgetPass: undefined;
   ContinueRegister: undefined;
